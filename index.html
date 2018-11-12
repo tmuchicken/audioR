@@ -16,10 +16,26 @@
  <button id="stop_button" onclick="stopVideo()">StopVideo</button>  <!-- 1010用 -->
  <div id="container"></div>
 
-  <div class="pure-u-1-3">
+ <div class="pure-u-1-3">
  <p>Your id: <span id="my-id">...</span></p>
  <p>Share this id with others so they can call you.</p>
- <font color="blue"><p>make call　先をtc4 とかに設定して"call" 連打してください</p></font>
+ <div id="peerid-ui">
+    <p>select your id</p>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioL1">AudioL1</button>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioL2">AudioL2</button>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioR1">AudioR1</button>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioR2">AudioR2</button>
+    <br>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioUserL1">AudioUserL1</button>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioUserL2">AudioUserL2</button>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioUserR1">AudioUserR1</button>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="AudioUserR2">AudioUserR2</button>
+    <br>
+    <button href="#" class="pure-button pure-button-secondary" type="button" id="random">Random</button>
+</div>
+ <!--<font color="blue"><p>make call　先をtc4 とかに設定して"call" 連打してください</p></font>-->
+
+ 
  <h3>Make a call</h3>
  <form id="make-call" class="pure-form">
      <input type="text" placeholder="Call user id..." id="callto-id">
@@ -30,9 +46,12 @@
      <button href="#" class="pure-button pure-button-success" type="submit">
          End Call
      </button>
+
  </form>
 </div>
 </body>
+
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
